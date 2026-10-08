@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Night City Survival</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="stat">
+          <span class="label">Vie</span>
+          <span id="health">100</span>
+        </div>
+        <div class="stat">
+          <span class="label">Munitions</span>
+          <span id="ammo">12 / 30</span>
+        </div>
+        <div class="stat">
+          <span class="label">Score</span>
+          <span id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">Vague</span>
+          <span id="wave">1</span>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+      <div id="gameOverlay" class="overlay active">
+        <div class="panel">
+          <p class="eyebrow">Jeu HTML</p>
+          <h1>Night City Survival</h1>
+          <p>
+            Déplace-toi avec ZQSD, vise avec la souris et tire avec le clic gauche.
+          </p>
+          <button id="startButton">Commencer</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
